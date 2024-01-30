@@ -1,0 +1,26 @@
+.footer{
+  background: #EDEEF3;
+  padding-top:0;
+  padding-bottom: 17px;
+
+}
+
+.footer::before{
+  content: "";
+width: 986px;
+height: 2px; 
+background:  #CED4DA;
+display: block;
+margin: 0 auto;
+}
+
+.footer__p{
+  color:  #6C757D;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; 
+margin-top: 13px;
+}
