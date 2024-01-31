@@ -1,4 +1,4 @@
-export let data = [
+export let emoji = [
   {
     title: "100",
     symbol: "💯",

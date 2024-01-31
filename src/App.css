@@ -3,3 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
+.loading{
+  text-align: center;
+  font-size: 42px;
+  color:red;
+}

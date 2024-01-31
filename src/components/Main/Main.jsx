@@ -3,14 +3,12 @@
 import "./Main.css";
 
 
-export const Main = ({cards}) => {
-
-
-  
+export const Main = ({ cards, load }) => {
   return (
     <section className="content">
       <div className="container">
-   {cards}
+        
+        {cards}
       </div>
     </section>
   );
