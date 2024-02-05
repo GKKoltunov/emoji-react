@@ -7,7 +7,7 @@
 
 .footer::before{
   content: "";
-width: 986px;
+max-width: 986px;
 height: 2px; 
 background:  #CED4DA;
 display: block;

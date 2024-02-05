@@ -1,10 +1,15 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .content{
   background: #EDEEF3;
 }
 
 .container{
 padding-top: 80px ;
-padding-bottom:  49px;
+
 display:grid;
 grid-template-columns: 316px 316px 316px;
 justify-content:center;
@@ -12,6 +17,15 @@ column-gap: 19px;
 row-gap: 22px;
 }
 
+.line{
+  margin: 0 auto;
+  content: '';
+  height: 2px;
+  background: #CED4DA;
+  display: block;
+  max-width: 986px;
+  margin-top: 48px;
+}
 
 
 .emoji{
@@ -56,4 +70,131 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-top: 12px;
+}
+
+.set{
+  display: flex;
+  justify-content: space-between;
+  max-width: 986px;
+  margin: 0 auto;
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+ padding: 18px 0 18px 0;
+}
+
+
+
+.limit {
+  display: flex;
+  gap: 20px;
+  
+}
+.list{
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+width: 120px;
+height: 40px;
+padding: 12px 14px 12px 14px ;
+border: 1px;
+background:  #FFFFFF;
+cursor: pointer;
+transition: 0.5s;
+text-align: end;
+}
+
+.perPage{
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+height: 40px;
+padding: 12px 14px 12px 14px ;
+border: 1px;
+cursor: pointer;
+transition: 0.5s;
+text-align: end;
+}
+
+.btns{
+  display: flex;
+  gap: 2px
+}
+.btnPage{
+font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  width: 50px;
+  height: 40px;
+  padding: 12px 0 12px 0;
+  border: 1px;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnPage:hover{
+  background-color: #055160;
+ 
+}
+.btnPage:disabled{
+  opacity: 0.5;
+  background:  #FFFFFF;
+  cursor: default;
+}
+
+.btnPage-focus{font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+width: 50px;
+height: 40px;
+padding: 12px 0 12px 0 ;
+border: 1px;
+cursor: pointer;
+transition: 0.5s;
+  background-color: #055160;
+}
+
+@media(max-width:1000px){
+  .container{
+ grid-template-columns:  316px 316px;
+  }
+ .set{
+ 
+  margin: 0 20px 0 20px;
+ }
+
+ .header__input{
+  width:80%;
+  margin: 0 auto;
+ }
+}
+
+@media(max-width:670px){
+  .container{
+ grid-template-columns:   316px;
+  }
+  .set{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+h1{
+  font-size: 50px;
+}
+.header__p{
+  font-size: 15px;
+}
+.btnPage{
+  width: 40px;
+}
+.btnPage-focus{
+  width: 40px;
+}
+
 }
